@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background:rgb(247, 209, 178);
+    }
+    table
+    {
+      border: 2px white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px grey;
+      width: 325px;
+      height: 230px;
+      background-image: linear-gradient(beige, white);
+      
+    }
+    #Number{
+        font-family: cursive;
+        color:brown ;
+    }
+    .num{
+        border-radius: 2px;
+        box-shadow: 1px 4px 5px rgb(172, 171, 171);
+        border-color: white;
+    }
+    h2{
+        font-family: lucida Handwriting;
+        letter-spacing: 5px;
+        color: white;
+        text-shadow: 1px 3px 4px grey;
+        font-size: 30px;
+        
+    }
+    .tombol{
+        background-color: rgb(250, 213, 165);
+        border-color:rgb(250, 213, 165) ;
+        border:none;
+        border-radius: 7px;
+        width: 55px;
+        height: 40px;
+        box-shadow: 0px 4px 5px rgb(214, 159, 123);
+        color: rgb(165, 143, 143);
+        cursor: pointer;
+        transition: 0.8s;
+        margin: 5px;
+        font-size: 20px;
+    
+    }
+    .tombol:hover{
+        background: rgb(235, 183, 151);
+    }
+</style>
+<body>
+
+    <form name="calculator" align="center">
+  
+        <table align="center" border="0">
+         <h2 align="center">Kalkulator</h2>
+         <tr>
+          <td id="Number"><b>Bil 1</b></td><td>:</td><td><input type="number" name="angka1" class="num"></td>
+         </tr>
+         <tr>
+          <td id="Number"><b>Bil 2</b></td><td>:</td><td><input type="number" name="angka2" class="num"></td>
+         </tr>
+         <tr>
+          <td id="Number"><b>Operator</b></td>
+          <td>:</td>
+          <td>
+           <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+           <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+           <input class="tombol" type="button" onclick="kali()" value="  *  ">
+          </td>
+         </tr>
+         <tr>
+             <td></td><td></td>
+             <td><input class="tombol" type="button" onclick="bagi()" value="  /  ">
+                <input class="tombol" type="button" onclick="modulus()" value="  %  ">
+                <input class="tombol" type="reset" value="C">
+            </td>
+         </tr>
+        </table>
+         
+    </form>
+    
+      <script type="text/javascript">
+
+      function tambah(){
+       let angka1=parseFloat(document.calculator.angka1.value);
+       let angka2=parseFloat(document.calculator.angka2.value);
+       let hasil= angka1+angka2;
+       alert (angka1+" + "+angka2+" = "+hasil)
+      }
+      function kurang(){
+       let angka1=parseFloat(document.calculator.angka1.value);
+       let angka2=parseFloat(document.calculator.angka2.value);
+       let hasil= angka1-angka2;
+       alert (angka1+" - "+angka2+" = "+hasil);
+      }
+      function kali(){
+       let angka1=parseFloat(document.calculator.angka1.value);
+       let angka2=parseFloat(document.calculator.angka2.value);
+       let hasil= angka1*angka2;
+       alert (angka1+" * "+angka2+" = "+hasil);
+      }
+      function bagi(){
+       let angka1=parseFloat(document.calculator.angka1.value);
+       let angka2=parseFloat(document.calculator.angka2.value);
+       let hasil = angka1/angka2;
+       alert (angka1+" / "+angka2+" = "+hasil);
+       
+      }
+      function modulus(){
+       let angka1=parseFloat(document.calculator.angka1.value);
+       let angka2=parseFloat(document.calculator.angka2.value);
+       let hasil = angka1%angka2;
+        alert (angka1+" % "+angka2+" = "+hasil);
+     }
+      </script>
+</body>
+
+</html>
