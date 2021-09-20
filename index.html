@@ -4,160 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burnout Awareness</title>
+    <title>Form</title>
+    
+    
+
+   <p class="p"> <img class="logo" src="Untitled design (8).png" alt="">Calling for Volunteer</p>
+
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-  <table border="1" width="100%" height="600">
-    <tr>
-        <td colspan="2" height="50" align="center" bgcolor="#98AFC7"> <h1>Welcome To My Website!</h1>
-        </td>
-
-    </tr>
-    <tr>
-       <td colspan="2" height="40" align="center" bgcolor="#EBF4FA" >
-           <a href= "https://twitter.com/nsblnz" target="_blank"><img width="35" src="Twitter.png"alt="" align="middle"></a> &ensp; &ensp;
-           <a href="https://www.instagram.com/nehasabilaa/" target="_blank"><img width="35" src="Instagram.png" align="middle"></a>
-        </td>
-
-    </tr>
-    <tr>
-        <td width="27%" bgcolor="#98AFC7" align="left" Valign="top">
-         
-            <p>
-                    <ul>
-                <li><h1 style="font-size: 20px; font-weight: bold;">Tugas 2 : </h1>
-                <a href="https://nehasabila.github.io/Tugas-2/" target="_blank">
-                    <button type="button" style="background-color: honeydew;
-                     border-radius: 5px; 
-                     box-shadow: 0px 3px 4px grey;
-                     cursor: pointer;
-                     border: none;
-                     color: grey;
-                     font-size: 15px;"><b>Klik Disini</b>
-                    </button>
-                    </a>
-                </li>
-                <li>
-                     <h1 style="font-size: 20px; font-weight: bold;">Tugas 3 : </h1>
-                     <a href="https://nehasabila.github.io/Tugas-3/" target="_blank">
-                         <button type="button" style="background-color: honeydew;
-                         border-radius: 5px; 
-                         box-shadow: 0px 3px 4px grey;
-                         cursor: pointer;
-                         border: none;
-                         color: grey;
-                         font-size: 15px;"><b>Klik Disini</b>
-                         </button>
-                     </a>
-                </li>
-                </ul>
-          </p> 
-           
-            <marquee direction="right"><h1>Kritik & Saran</h1></marquee>
-
-            <table border="0" align="center">
-               
-                <tr><td>Nama:</td> <td><input type="text" name="nama" size="25"/></td></tr>
-                
-                <tr><td>Email:</td><td><input type="text" name="email" size="25"></td></tr>
-
-                <tr><td>Jenis Kelamin:</td> <td><input type="radio" name="jenis_kelamin" value="laki-laki" />
-                Laki-laki<input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan</td></tr>
-
-                <tr><td>Kelas:</td><td><input type="radio" name="kelas" value="Kom A">Kom A <input type="radio" name="kelas" value="Kom B">Kom B <input type="radio" name="kelas" value="Kom C">Kom C</td></tr>
-
-                <tr><td>Tanggal Lahir:</td><td><input type="date" size="30" name="Tanggal Lahir"/></td></tr>
-                
-                <tr><td>Agama:</td> <td><select name="agama">
-                   <option value="Islam">Islam</option>
-                   <option value="Kristen">Kristen</option>
-                   <option value="Budha"> Budha</option>
-                   <option value="Hindu"> Hindu</option>
-                </select></td></tr>
-
-                <tr><td>Alamat:</td> <td><textarea name="alamat" row="5" cols="25"></textarea></td></tr>
-
-                <tr><td>Kritik & Saran:</td> <td><textarea name="Kritik & Saran" id="" cols="25" rows="3"></textarea></td></tr>
-                <tr><td></td><td><input type="submit" align="right"></td></tr>
-                </table>
-                </form>
-
-               
-                
-        </td>
+    
+ <div class="container">
+    <form action="Kirim.php" method="GET">
         
-        <td align="center" valign="top" bgcolor="#B6B6B4">
-            <h2>Burnout Awareness</h2>
-            <img src="Let's Talk About.png" alt="Gambar_Burnout" width="600" height="90" align="middle"> 
-           
-
-            <p align="left"> 
-                <b><i>Sindrom Burnout</i></b> diperkenalkan pertama kali pada tahun 1980 oleh psikoanalis terkemuka <u>Amerika Serikat</u> yakni <i>Freudenberger</i>.  Meski sudah diperkenalkan sejak 48 tahun yang lalu, burnout belum dikenal dan dimengerti dengan baik oleh sebagian besar masyarakat dunia modern.
-            </p>
-            <p align="left">
-                Burnout ialah kelelahan berlebihan secara fisik, mental dan emosi akibat stres yang berlebihan dan berkepanjangan. Ketika kita mengalami  satu stres dan aktivitas pekerjaan yang berlebihan kemudian dibebani oleh stres lain lagi dan tuntutan baru lagi secara naluriah kita akan berusaha memenuhi semua tuntutan tersebut dan kemudian dibebani oleh jadwal pekerjaan dan juga beban lain dan jika hal tersebut terjadi berkepanjangan maka stres tersebut dapat menyerap energi fisik dan emosi hingga mental kita secara perlahan.
-            </p>
-          
-            <h4 align="left">Apa yang menyebabkan seseorang mengalami burnout?</h4>
-            <img src="Burnout.png" alt="Gambar_Burnout" width="350" height="150">
-            <p align="left">
+        <div id="header" class="header">Silahkan Isi Data Anda</div>
+    
+        <div class="table">
+    
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td> : </td>
+                <td><input type="text" id="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td> : </td>
+                <td><input type="email" id="email" ></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td> : </td>
+                <td><input type="password" id="password" >
+                </td>
+            </tr>
+            <tr>
+                <td><label for="konfirmasi">Konfirmasi Password</label></td>
+                <td> : </td><td><input type="password" id="konfirmasi"></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td> : </td>
+                <td><input type="text" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="tempatlahir">Tempat Lahir</label></td>
+                <td> : </td>
+                <td><input type="text" id="tempatlahir"></td>
+            </tr>
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td> : </td>
+                <td><input type="date" id="tgl"></td>
+            </tr>
+            <tr>
+                <td><label for="usia">Usia</label></td>
+                <td> : </td>
+                <td><input type="number" id="usia"></td>
+            </tr>
+            <tr>
+                <td><label for="no">No. Telepon</label></td>
+                <td> : </td>
+                <td><input type="text" id="no"></td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td> : </td>
+                <td>
+                    <div class="agama">
+                    <select name="agama" id="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                   </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td> : </td>
+                <td><input type="radio" name="jeniskelamin" id="gender">Laki-Laki <input type="radio" name="jeniskelamin" id="gender">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="Hobby">Hobby</label></td>
+                <td> : </td>
                 
-                <b>Ekonomi</b> : Stres akibat permasalahan ekonomi yang semakin meningkat pada era modern menghasilkan manusia modern yang akan bekerja keras untuk memenuhi tuntutan ekonomi sehingga mengesampingkan kebutuhan untuk beristirahat atau mengambil libur.
+                <td>
+                    <div class="checkbox">
+                    <input type="checkbox">Membaca 
+                    <input type="checkbox">Menulis
+                    <br>
+                    <input type="checkbox">Melukis
+                    &ensp;<input type="checkbox">Traveling
+                    </div>
+                </td>  
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td> : </td>
+                <td>
+                    <div class="alamat">
+                    <textarea name="alamat" id="alamat" cols="20" rows="3" placeholder="Masukkan Alamat Lengkap"></textarea>
+                </div></td>
+            </tr>
+        </table>
+        </div>
+               <div align="center">
+               <td><button type="submit">Submit</button>&emsp;<button type="reset">Reset</button></td>
+        </div>
+    </form>
+    </div>
 
-            <br><br>
-                <b>Lingkungan Pekerjaan</b>: jika lingkungan pekerjaan begitu kompetitif, rekan kerja yang kurang fleksibel, mekanisme kerja yang tinggi hingga ketidakpastian posisi di pekerjaan disebutkan menjadi salah satu faktor sindrom burnout.
-            <br><br>
-                <b>Kehidupan sosial</b>: Kehidupan sosial meliputi hubungan ditengah keluarga, pertemanan hingga masyarakat secara luas. Hubungan keluarga yang tak harmonis atau tidak hangat,  hubungan yang kurang terbuka dengan teman akrab ditambah lagi kehidupan di era modern dimana manusia lebih terpaku kepada sosial media dan gadget sehingga kurang berkomunikasi dengan teman di sekitar.
-            <br><br>
-                Sindrom burnout yang tidak diselesaikan dengan baik bisa mengarah kepada depresi, gangguan cemas hingga prilaku percobaan bunuh diri.
-                
-            </p>
-                
-            <h4 align="left">Gejala Fisik</h4>
-            <ul align="left">
-                <li>Mudah lelah</li>
-                <li>Mudah terserang flu</li>
-                <li>Sakit kepala</li>
-                <li>Gangguan pola tidur dan makan</li>
-            </ul>
-            
-            <h4 align="left">Gejala Emosi</h4>
-            <ol align="left">
-                <li>Pesimis</li>
-                <li>Mudah menyerah</li>
-                <li>Sensitif</li>
-                <li>Agresif</li>
-            </ol>
-
-            <h4 align="left">Bagaimana menjaga agar stres tidak menjadi sindrom burnout?</h4>
-            <p align="left">
-                
-                jeda pada kehidupan teknologi, jika kamu kelelahan hindarilah kebiasaan berseluncur di dunia sosial media, hindari kebiasaan duduk didepan televisi dan komputer.
-            <br><br>
-                Kembalikan sisi kreatif kamu, ingat kembali hobi kamu. Jika kamu masih bingung apa yang ingin dilakukan, ambilah jeda untuk berlibur, lebih dekat dengan alam menurut penelitian sangat baik bagi kesehatan fisik dan emosi.
-            <br><br>
-                Berikan waktu untuk relaksasi, olahraga dan tidur yang cukup dapat membantu otot-otot kamu yang tegang akibat stress yang berlebihan. Yoga, meditasi, pilates hingga lari dapat membantu kamu rileks dan mendapatkan kualitas tidur yang baik.
-            <br><br>
-                Makanlah makanan yang sehat dan rendah gula karena akan membantu tubuh kamu untuk rileks karena berpengaruh pada kadar hormon stres (<i>kortisol</i>).
-             <br><br>
-
-                <i>Source:</i>
-               <a href=" https://academy.suryahusadha.com/artikel/articles/burnout-syndrome/"target="_blank">Artikel Surya Husadha Academy</a>
-            </p>
-            
-         </td>
-    </tr>
-    <tr>
-        <td colspan="2" align="middle" bgcolor="#EBF4FA">
-            <i>Created By</i>: Neha Sabila 
-            <br> College Student of Universitas Sumatera Utara
-            <br><br> You can send me a message : <a href="mailto:nehasabila62@gmail.com">nehasabila62@gmail.com</a>
-            <br><br>
-            &copy; Neha Sabila, 2021
-
-        
-        </td>
-    </tr>
-   </table>
+    <div class="footer">
+       <marquee direction="right"><h4>Thanks for the participants!</h4></marquee>
+    </div>
 </body>
 </html>
